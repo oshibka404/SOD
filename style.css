@@ -1,0 +1,178 @@
+@font-face {
+    font-family: Square; /* Гарнитура шрифта */
+    src: url(square.ttf); /* Путь к файлу со шрифтом */
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.screen {
+	position: absolute;
+	width: 800px;
+	height: 600px;
+	overflow: hidden;
+	left: 50%;
+	margin-left: -400px;
+	top: 50%;
+	margin-top: -300px;
+}
+
+.message {
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 10;
+	font-family: Square;
+	font-size: 80px;
+	color: #fff;
+}
+
+.messagebg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #555;
+	opacity: 0.5;
+}
+
+.messageContent {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.mainMenu {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.mainMenu li {
+	display: block;
+	cursor: pointer;
+	margin: 10px;
+}
+
+.mainMenu li.current, .mainMenu li:hover {
+	color: #f00;
+}
+
+.space {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+}
+
+.stars1 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/8x3.png)
+}
+
+.stars2 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/8x4.png)
+}
+
+.stars3 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/8x5.png);
+}
+
+.dashboard {
+	color:#fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Square;
+	font-size: 40px;
+}
+
+.points, .lifes {
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+}
+
+.points {
+	left: 0;
+}
+
+.lifes {
+	right: 0;
+}
+
+.life {
+	display: inline-block;
+}
+
+.life.inactive {
+	color: #444;
+}
+
+.text {
+	color: #888;
+}
+
+.monster {
+	position: absolute;
+	width: 50px;
+	height: 60px;
+	background: url(images/monster1.png);
+	margin-left: -25px;
+}
+
+.bullet {
+	position: absolute;
+	margin-bottom: 55px;
+	border-radius:5px;
+	width: 10px;
+	height: 10px;
+	margin-left: -5px;
+	background: url(images/bullet.png);
+}
+
+#ship {
+	position: absolute;
+	width: 60px;
+	height: 90px;
+	background-position: -6px 0;
+	margin-bottom:60px;
+	left:50%;
+	margin-left: -30px;
+	background: url(images/ship.png);
+}
+
+.gameover {
+	position: absolute;
+	text-align: center;
+	top: 250px;
+	font-size: 100px;
+	left:50%;
+	margin-left: -245px;
+}
+
+.gametitle {
+	text-align: center;
+	color: green;
+}
